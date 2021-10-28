@@ -1,1 +1,11 @@
+#Start by asking user if they have pets
+pets= input('Do you have pets? ')
+
+#if yes, dont continue
+#if no, move onto next question
+if pets == 'yes':
+    print('You do not qualify for the condos.')
+else:
+    print('Please hit enter for the next question')
+
 
