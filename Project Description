@@ -1,0 +1,6 @@
+#Project Proposal 
+
+#Our project objective is to create a program which will assign people to a specific living space dependent on their income, family size, and floor number and pets. 
+It will start by asking the user to input their income, and if it is over a certain dollar amount they will qualify to live in the condos. Then it will ask the size 
+of the family and from there determine if there are any condos with enough rooms. After that it will ask what floor number the family wants to be on (based on the 
+view from that floor) and if the family has pets, which will not be allowed in the condos.
