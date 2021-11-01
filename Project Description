@@ -1,11 +1,70 @@
-#Start by asking user if they have pets
+#Start with welcome message
+
+#ask user if they have pets
 pets= input('Do you have pets? ')
 
 #if yes, dont continue
-#if no, move onto next question
+#if no, move onto price breakdown
 if pets == 'yes':
     print('You do not qualify for the condos.')
 else:
-    print('Please hit enter for the next question')
+    print('You qualify for one of our condos')
+    
+# This part will show prices for each floor
+def main():
+    # Display the start-up message.
+    startup_message()
+    input('Press Enter to see monthly cost for floor 1.')
+    # Display floor 1.
+    step1()
+    input('Press Enter to see monthly cost for floor 2.')
+    # Display floor 2.
+    step2()
+    input('Press Enter to see monthly cost for floor 3.')
+    # Display floor 3.
+    step3()
+    input('Press Enter to see monthly cost for floor4.')
+    # Display floor 4.
+    step4()
 
+# The startup_message function displays the
+# program's initial message on the screen.
+def startup_message():
+    print('Here we will let you know the average')
+    print('monthly cost for a condo on each floor')
+
+# The step1 function displays price for the first floor
+def step1():
+    print('First floor: $4,000 a month')
+
+# The step2 function displays price for second floor
+def step2():
+    print('Second floor: $5,000 a month')
+
+
+# The step3 function displays price for third floor
+def step3():
+    print('Third floor: $6,000 a month')
+
+# The step4 function displays price for fourth floor
+def step4():
+    print('Fourth floor: $7,000 a month')
+
+# Call the main function to begin the program.
+main()
+
+
+
+try_again= 'yes' 
+while try_again=='yes' :
+    income =int(input("Whats your average monthly income? "))
+    roommate =int(input("Whats your roomates average monthly income? "))
+    roommate2 =int(input("Whats your second roomates average monthly income? "))
+# and bonus. Assign the result to pay.
+total = income + roommate +roommate2
+
+# Calculate the total by adding the three incomes
+print("Your total monthly income is ", total + income)
+
+try_again = input("Would you like to try again with a different roommate?")
 
