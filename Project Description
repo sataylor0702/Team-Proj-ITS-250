@@ -1,4 +1,6 @@
 #Start with welcome message
+print (" Welcome, we will help calculate and see if you are")
+print ("eligible for one of our condos")
 
 #ask user if they have pets
 pets= input('Do you have pets? ')
@@ -57,9 +59,10 @@ main()
 
 try_again= 'yes' 
 while try_again=='yes' :
-    income =int(input("Whats your average monthly income? "))
-    roommate =int(input("Whats your roomates average monthly income? "))
-    roommate2 =int(input("Whats your second roomates average monthly income? "))
+    income =float(input("Whats your average monthly income? "))
+    roommate =float(input("Whats your roomates average monthly income? "))
+    roommate2 =float(input("Whats your second roomates average monthly income? "))
+    break
 # and bonus. Assign the result to pay.
 total = income + roommate +roommate2
 
